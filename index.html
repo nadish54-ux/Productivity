@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Productivity Dashboard</h1>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle">Switch Theme</button>
+
+    <!-- Clock Section -->
+    <div class="section" id="clockSection">
+      <h2>🕒 Clock</h2>
+      <div id="clock">00:00:00</div>
+    </div>
+
+    <!-- To-Do List Section -->
+    <div class="section" id="todoSection">
+      <h2>📋 To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="section" id="notesSection">
+      <h2>🗒️ Notes</h2>
+      <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
